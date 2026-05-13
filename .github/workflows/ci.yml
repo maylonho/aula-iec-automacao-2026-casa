@@ -22,3 +22,6 @@ jobs:
 
       - name: Build Application JAR
         run: mvn clean package
+
+      - name: Run test
+        run: mvn test
