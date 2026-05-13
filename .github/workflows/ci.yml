@@ -1,0 +1,25 @@
+name: Continuous Integration with Github Actions
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Build Application JAR
+        working-directory: ./S13_DockerizingAfter/rest-with-spring-boot-and-java-erudio
+        run: mvn clean package
