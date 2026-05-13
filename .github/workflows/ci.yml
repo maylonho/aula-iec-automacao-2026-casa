@@ -21,5 +21,4 @@ jobs:
           cache: maven
 
       - name: Build Application JAR
-        working-directory: ./S13_DockerizingAfter/rest-with-spring-boot-and-java-erudio
         run: mvn clean package
