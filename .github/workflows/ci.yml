@@ -33,7 +33,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Docker Compose Build
-        run: docker build -t aula_iec_automacao:latest
+        run: docker build -t aula_iec_automacao:latest .
 
       - name: Push to Docker Hub Container Registry
         run: |
