@@ -512,6 +512,3 @@ Com essa estrutura você possui um ambiente completo de:
 ```txt
 Spring Boot + JUnit + Docker + Github Actions + Docker Hub + Docker Compose
 ```
-
-pronto para aulas, testes, CI/CD e projetos acadêmicos.
-
